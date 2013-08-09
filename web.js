@@ -1,6 +1,7 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
+app.use(express.static(__dirname + './')); // necessary for local .css files
 
 var fs = require('fs');
 
